@@ -2,7 +2,7 @@ import numpy as np
 from tensorflow import keras
 
 if __name__ == '__main__':
-    model = keras.models.load_model('my_model.h5')
+    model = keras.models.load_model('model_final.h5')
     mean_var = np.loadtxt('mean_var_info.txt', delimiter=',')
     file_names = ['4/data_4.txt', '5/data_5.txt']
     for name in file_names:
