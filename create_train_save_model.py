@@ -45,7 +45,7 @@ def get_network_model(m):
 
 
 data = np.loadtxt('train_validation_balanced_data.txt', delimiter=',')
-num = 28
+num = 29
 optimizer = 'nadam'
 epochs = 60
 n = len(data)
