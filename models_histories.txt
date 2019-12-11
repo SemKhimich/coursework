@@ -1,0 +1,692 @@
+********************
+model1
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.582039, 0.5931542, 0.59249175, 0.5986014, 0.5997056, 0.6068458, 0.59263897, 0.5993375, 0.6038278, 0.5945528, 0.58652925, 0.5880751, 0.6049319, 0.6020611, 0.5993375, 0.6075819, 0.5955834, 0.61538464, 0.6054472, 0.60706663]
+history_loss: [1.3500386834978224, 1.1934718214197548, 1.0413298547904106, 0.9278548537346647, 0.9459834010714242, 0.941040889708751, 0.9122867653025043, 0.8858633558540429, 1.0190417900829576, 0.9265630984157159, 1.0513042897128602, 1.0751838247961185, 0.9233410636861841, 0.8153078666451138, 0.8888707328597368, 0.7763686332888668, 1.0538200786414724, 0.8486869608912786, 0.8022625273099752, 0.7856320359709511]
+train_loss:  0.7856320359709511 , train_acc:  0.60706663
+validation_ones_loss: 1.0851442277386707, validation_ones_acc: 0.37340346
+validation_zeros_loss: 0.47640498178173796, validation_zeros_acc: 0.83189034
+total_acc:  0.6072874577180577
+********************
+********************
+model2
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(300, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.57821125, 0.5882223, 0.57894737, 0.5900994, 0.58432096, 0.5938167, 0.5963195, 0.5905042, 0.59006256, 0.6027972, 0.59550977, 0.58181816, 0.5802724, 0.59712917, 0.59941113, 0.60184026, 0.60265, 0.5984542, 0.6020611, 0.5991903]
+history_loss: [1.2658861624567133, 1.274937827946028, 1.100089683680136, 1.1390602480281482, 1.0471298509456675, 1.0659159088292718, 0.9567726713486967, 1.0111639173100175, 0.8904835722180557, 1.0041433852079558, 0.8257364666545308, 1.1251858194171833, 1.0827227753139745, 0.8486858573563625, 0.9001033937926674, 0.7988836628486007, 0.7774518925695241, 0.7755027669161437, 0.7509736803510763, 0.731473171061613]
+train_loss:  0.731473171061613 , train_acc:  0.5991903
+validation_ones_loss: 0.7687151257388132, validation_ones_acc: 0.7753569
+validation_zeros_loss: 0.8308321365718374, validation_zeros_acc: 0.3975469
+total_acc:  0.5826279002162609
+********************
+********************
+model3
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(400, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.5799043, 0.59116673, 0.583364, 0.57460433, 0.5916084, 0.5857195, 0.594332, 0.5849834, 0.5949209, 0.5964667, 0.589032, 0.5885168, 0.60044163, 0.6039014, 0.60058886, 0.5949945, 0.61126244, 0.5980125, 0.59823334, 0.59190285]
+history_loss: [1.306582162895315, 1.2375991798035133, 1.2278200833289379, 1.2721854802041446, 1.2071572367610588, 1.1429516935506463, 1.0865423423207592, 1.1785999142250507, 0.9672943638798767, 0.9156575219351271, 1.1503460304369415, 1.0361429385152598, 0.8802077764660986, 0.8278555382645038, 0.8235906725952983, 0.8686558112441769, 0.7595601941058862, 0.8141870109219739, 0.7945453601766256, 0.7877402462237979]
+train_loss:  0.7877402462237979 , train_acc:  0.59190285
+validation_ones_loss: 0.3723356028099332, validation_ones_acc: 0.83546203
+validation_zeros_loss: 1.0962219606402288, validation_zeros_acc: 0.36724386
+total_acc:  0.5966138945899995
+********************
+********************
+model4
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.5728377, 0.58932644, 0.591682, 0.58719176, 0.58704454, 0.60110414, 0.5974972, 0.603975, 0.60883325, 0.6108944, 0.61126244, 0.6097902, 0.62068456, 0.6263526, 0.62951785, 0.6304012, 0.6255429, 0.6381303, 0.64011776, 0.6368789]
+history_loss: [1.450262816350689, 1.273462227946658, 1.1776925379623593, 1.117809331649623, 1.0942562419305535, 0.8775616117334559, 0.8221221437601645, 0.7898554507888412, 0.71626631296598, 0.70048645051648, 0.699231627082228, 0.7290777408817826, 0.6901927533463866, 0.6731695847516557, 0.6641384632305753, 0.6567989094361778, 0.6488125830658402, 0.6399355828038111, 0.6404564086286119, 0.6460713743812511]
+train_loss:  0.6460713743812511 , train_acc:  0.6368789
+validation_ones_loss: 0.6628016997870424, validation_ones_acc: 0.4680691
+validation_zeros_loss: 0.6461252750772418, validation_zeros_acc: 0.7770563
+total_acc:  0.6256900920800352
+********************
+********************
+model5
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(300, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(150, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.5713655, 0.5813029, 0.56555027, 0.5901362, 0.5840265, 0.5831432, 0.5827015, 0.5938903, 0.60058886, 0.60529995, 0.6062569, 0.6111152, 0.60294443, 0.6239234, 0.6217151, 0.62112623, 0.6304748, 0.6299595, 0.62480676, 0.631947]
+history_loss: [3.0642376130694275, 1.3663812142152052, 1.4652888426501653, 1.2033471037765, 1.0903181752739122, 1.0647314975531084, 0.9502366428389284, 0.8432816675668435, 0.7681180485851589, 0.7465793364487635, 0.7377496043680168, 0.7061418462598152, 0.742790994185229, 0.6828033108591902, 0.6909794671025661, 0.6833579236810857, 0.6651957798144551, 0.6658473218676357, 0.6724018510668253, 0.6591924562057591]
+train_loss:  0.6591924562057591 , train_acc:  0.631947
+validation_ones_loss: 0.75652290528023, validation_ones_acc: 0.5281743
+validation_zeros_loss: 0.530193445228395, validation_zeros_acc: 0.75829726
+total_acc:  0.6455649528426197
+********************
+********************
+model6
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(300, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dropout(0.15),
+        keras.layers.Dense(150, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.5649614, 0.5615753, 0.58940005, 0.5963195, 0.60235554, 0.60537356, 0.61538464, 0.6161943, 0.6193596, 0.6290026, 0.63165253, 0.6344498, 0.63533306, 0.6344498, 0.6373942, 0.6392344, 0.6390872, 0.6388664, 0.63768864, 0.6379831]
+history_loss: [3.706997366314826, 1.6689073183890164, 1.2072187372415786, 1.0318723367600482, 0.9606611415047307, 0.8714106567124474, 0.789755002865249, 0.7168774664467821, 0.6752052220036363, 0.6569448915789747, 0.6574075422262418, 0.6475659112786387, 0.6486160741950995, 0.6454208532501153, 0.6464331698408888, 0.6425898431283742, 0.6467207073243962, 0.6462260122065777, 0.6455755195593106, 0.6463457513390809]
+train_loss:  0.6463457513390809 , train_acc:  0.6379831
+validation_ones_loss: 0.6735921665567102, validation_ones_acc: 0.56198347
+validation_zeros_loss: 0.6115002312185445, validation_zeros_acc: 0.7092352
+total_acc:  0.6370997308236868
+********************
+********************
+model7
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.5805668, 0.5998528, 0.61700404, 0.620979, 0.6284873, 0.6333456, 0.63371366, 0.6368789, 0.6368789, 0.6411483, 0.63930804, 0.6357011, 0.6355539, 0.6423261, 0.6421789, 0.640265, 0.6486566, 0.64828855, 0.6463011, 0.6481413]
+history_loss: [1.2019931837790232, 0.8220561226238255, 0.674408204695035, 0.6776063867075109, 0.651755914439776, 0.6446471898705809, 0.6448297371221984, 0.6443397069354684, 0.6417553167594107, 0.6401287176787173, 0.6408390248308824, 0.6398503051420148, 0.637540801399808, 0.6362409126069732, 0.6371807812108773, 0.6397496795759597, 0.6320678811258457, 0.6330949280996466, 0.6319387433719319, 0.6288042650838788]
+train_loss:  0.6288042650838788 , train_acc:  0.6481413
+validation_ones_loss: 0.5737641486881552, validation_ones_acc: 0.63711494
+validation_zeros_loss: 0.7189910236375157, validation_zeros_acc: 0.65367967
+total_acc:  0.645564964667023
+********************
+********************
+model8
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dropout(0.15),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dropout(0.15),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.5526684, 0.5704085, 0.5863084, 0.5997792, 0.60706663, 0.6133971, 0.61840266, 0.6245123, 0.6207582, 0.6234082, 0.62598455, 0.62944424, 0.63305116, 0.630622, 0.6331984, 0.63297755, 0.63437617, 0.6338609, 0.6368053, 0.6369525]
+history_loss: [1.2918914720772556, 0.8094246845364702, 0.7202663255474959, 0.7430091703381221, 0.6970174292408898, 0.6834781064853802, 0.6635806973602651, 0.6620305825166067, 0.6569904585160181, 0.6551154115378176, 0.6512999236737274, 0.6536249248605025, 0.6483005219537807, 0.6560535166208298, 0.6485031816640846, 0.6500069419031069, 0.6471830685611678, 0.6452259283360638, 0.6438267848752288, 0.645652724497012]
+train_loss:  0.645652724497012 , train_acc:  0.6369525
+validation_ones_loss: 0.5877017374328882, validation_ones_acc: 0.60030055
+validation_zeros_loss: 0.696604745728629, validation_zeros_acc: 0.6782107
+total_acc:  0.6400441771094133
+********************
+********************
+model9
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(300, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(150, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(75, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.56142807, 0.587339, 0.6061097, 0.6069194, 0.5998528, 0.59889585, 0.6172985, 0.62407064, 0.6251012, 0.627972, 0.63010675, 0.6344498, 0.63717335, 0.6373942, 0.63577473, 0.6423997, 0.64343023, 0.6449761, 0.6457122, 0.6430622]
+history_loss: [1.8664058096320215, 1.3307763890128474, 1.14118855425133, 1.0150560207388004, 0.836779429855968, 0.8293943566393229, 0.7732126780981345, 0.7218276983857111, 0.6885271102530052, 0.6539028772941002, 0.6524269278145117, 0.644400418519886, 0.646175064722931, 0.6439122157672508, 0.6746903555859175, 0.6495068641546065, 0.636945536220429, 0.6337577021775721, 0.6352589776685319, 0.6387203502312802]
+train_loss:  0.6387203502312802 , train_acc:  0.6430622
+validation_ones_loss: 0.7044009743643201, validation_ones_acc: 0.4507889
+validation_zeros_loss: 0.6150208727965968, validation_zeros_acc: 0.8008658
+total_acc:  0.6293706460761638
+********************
+********************
+model10
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(300, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dropout(0.15),
+        keras.layers.Dense(150, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dropout(0.15),
+        keras.layers.Dense(75, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.55053365, 0.56290025, 0.587339, 0.6016194, 0.6054472, 0.6191388, 0.6202429, 0.6274567, 0.630254, 0.62826645, 0.629297, 0.63165253, 0.6328303, 0.63768864, 0.6379831, 0.63533306, 0.63894004, 0.6366581, 0.63717335, 0.6398233]
+history_loss: [1.5427946973382265, 0.9354679826563406, 0.7775175289981366, 0.7170236440103283, 0.6732222593659902, 0.6603309426976338, 0.6561208200094935, 0.655989659464355, 0.654036381839609, 0.6547229315324614, 0.6539074823265791, 0.6489204136948836, 0.6492137546042638, 0.6501306958175732, 0.6463370009823498, 0.6475216005231951, 0.6458936736826779, 0.644905736637677, 0.6436875052868025, 0.6444580566589122]
+train_loss:  0.6444580566589122 , train_acc:  0.6398233
+validation_ones_loss: 0.6048500911800777, validation_ones_acc: 0.62659657
+validation_zeros_loss: 0.6822863401788654, validation_zeros_acc: 0.64935064
+total_acc:  0.6382039109704948
+********************
+********************
+model11
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(25, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.58711815, 0.61648875, 0.6264262, 0.634597, 0.6360692, 0.63577473, 0.6360692, 0.6396025, 0.64298856, 0.6409275, 0.64129555, 0.6417372, 0.64541775, 0.6427678, 0.64953995, 0.64490247, 0.6508649, 0.64887744, 0.6508649, 0.6534413]
+history_loss: [0.7870712902952215, 0.6955401043747995, 0.6516536382835579, 0.6472183489474822, 0.6481550113304512, 0.6439132744264725, 0.6423166066660441, 0.6415392675555976, 0.6382660001483436, 0.6412727184141213, 0.6378624832230891, 0.6356323269785087, 0.6355925359662772, 0.6362746784649309, 0.6352381547672327, 0.6332858022013086, 0.6295220671746061, 0.6294329582526046, 0.6273039433944738, 0.6246986527586843]
+train_loss:  0.6246986527586843 , train_acc:  0.6534413
+validation_ones_loss: 0.6876471350732197, validation_ones_acc: 0.5462059
+validation_zeros_loss: 0.5879930106420366, validation_zeros_acc: 0.73015875
+total_acc:  0.6400441833835865
+********************
+********************
+model12
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dropout(0.15),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dropout(0.15),
+        keras.layers.Dense(25, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.5563489, 0.58483624, 0.60706663, 0.61641514, 0.62002206, 0.6233346, 0.6292234, 0.62959146, 0.6261318, 0.6346706, 0.6322414, 0.63592196, 0.63364005, 0.63518584, 0.63849837, 0.63997054, 0.6392344, 0.6398233, 0.6437983, 0.6411483]
+history_loss: [0.9128085654888427, 0.6928317198605936, 0.6716839801444698, 0.6586463395970948, 0.6569653018678336, 0.6549490082426286, 0.6515793974451339, 0.6503072331264961, 0.6516532595209397, 0.6488341206305598, 0.652300336767217, 0.6473938110605688, 0.65083551686785, 0.6484971402803238, 0.6429507715499353, 0.6443693854592063, 0.6427533994538844, 0.6432058555657784, 0.6409331404860071, 0.6409438145963594]
+train_loss:  0.6409438145963594 , train_acc:  0.6411483
+validation_ones_loss: 0.6230475801798206, validation_ones_acc: 0.54094666
+validation_zeros_loss: 0.6701555629657289, validation_zeros_acc: 0.7258297
+total_acc:  0.6352594774744289
+********************
+********************
+model13
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(300, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(150, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(75, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(40, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.56635994, 0.5936695, 0.6097902, 0.60890687, 0.6110416, 0.6258373, 0.630254, 0.6257637, 0.6328303, 0.6396761, 0.6392344, 0.6404122, 0.63827753, 0.6351123, 0.637615, 0.64416635, 0.644608, 0.6437983, 0.6471844, 0.64769965]
+history_loss: [1.6969530470984624, 0.8019597336436003, 0.7911930103445913, 0.7992329249936603, 0.702042534046854, 0.6597460999399325, 0.6703031638548749, 0.7090295286006597, 0.6573508578931578, 0.6479289739720735, 0.6464668636687064, 0.6397726411937044, 0.6423153557714224, 0.6740435541443935, 0.64162961195004, 0.6374152418046389, 0.6338677302150986, 0.6334352248637256, 0.6312454383514539, 0.6282904354403639]
+train_loss:  0.6282904354403639 , train_acc:  0.64769965
+validation_ones_loss: 0.6851808706411825, validation_ones_acc: 0.45529675
+validation_zeros_loss: 0.591067289549207, validation_zeros_acc: 0.7965368
+total_acc:  0.629370625685101
+********************
+********************
+model14
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(300, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dropout(0.15),
+        keras.layers.Dense(150, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(75, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dropout(0.15),
+        keras.layers.Dense(40, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.548399, 0.5656239, 0.5896945, 0.5957306, 0.60066247, 0.6054472, 0.610968, 0.6048583, 0.6131763, 0.6105263, 0.61369157, 0.61192495, 0.60934854, 0.6151638, 0.6156055, 0.6169304, 0.62068456, 0.6169304, 0.6143541, 0.61494297]
+history_loss: [1.2636310057601465, 0.9123010175211447, 0.7821865367722678, 0.7005246068828458, 0.666690903834047, 0.6640963128747683, 0.6626986315639132, 0.6629559409456038, 0.6633998431438113, 0.6627221893772818, 0.6607327630294347, 0.6629824414207605, 0.6602347428543321, 0.6638052887586623, 0.6565404824092628, 0.6543231649876168, 0.6544123794210277, 0.6575308957519362, 0.6534491924621798, 0.6504445455861434]
+train_loss:  0.6504445455861434 , train_acc:  0.61494297
+validation_ones_loss: 0.629786698107071, validation_ones_acc: 0.54019535
+validation_zeros_loss: 0.6643142118770495, validation_zeros_acc: 0.7215007
+total_acc:  0.6326830946964773
+********************
+********************
+model15
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dropout(0.15),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.56591827, 0.5826279, 0.5965403, 0.5966139, 0.6055944, 0.6180346, 0.6274567, 0.62959146, 0.61766654, 0.62480676, 0.63481784, 0.6373942, 0.6397497, 0.64181083, 0.6437983, 0.64122194, 0.6430622, 0.6422525, 0.64490247, 0.6440191]
+history_loss: [1.7885137574875403, 1.135994127720737, 0.9660454223732498, 0.9050476666140916, 0.7435146079503924, 0.6686614457719414, 0.6523281447800547, 0.6495493056276593, 0.6656258832017508, 0.656868051890288, 0.64830841634657, 0.6458682874085317, 0.6425575703656713, 0.6423605748955099, 0.640616286410801, 0.6407408936479139, 0.6404087679588844, 0.6414029303613199, 0.6363980501243022, 0.639684093371445]
+train_loss:  0.639684093371445 , train_acc:  0.6440191
+validation_ones_loss: 0.633326830539732, validation_ones_acc: 0.5890308
+validation_zeros_loss: 0.6457357474563786, validation_zeros_acc: 0.6890332
+total_acc:  0.6400441763854703
+********************
+********************
+model16
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='elu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='elu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='elu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.56356275, 0.5964667, 0.60191387, 0.6066986, 0.6273832, 0.61656237, 0.6304748, 0.6278984, 0.63187337, 0.6309901, 0.6367317, 0.63709974, 0.6304012, 0.6315789, 0.6368053, 0.63496506, 0.63430256, 0.6387192, 0.6485094, 0.64703715]
+history_loss: [1.372055925860491, 1.280122329585904, 0.9952305544857423, 0.7485411356598479, 0.7253688590773161, 0.7197447752004869, 0.6728951147912748, 0.6540064814031936, 0.6473164150326138, 0.6439437670351434, 0.6460971576877056, 0.6415421597958488, 0.6842931707071214, 0.6801606068375973, 0.6481098465766808, 0.6413678815183194, 0.638877901466708, 0.6348189215911062, 0.6383257570624746, 0.6285792029118951]
+train_loss:  0.6285792029118951 , train_acc:  0.64703715
+validation_ones_loss: 0.5530458913540858, validation_ones_acc: 0.64162284
+validation_zeros_loss: 0.7268935950287493, validation_zeros_acc: 0.6421356
+total_acc:  0.6418844208060971
+********************
+********************
+model17
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation=keras.layers.LeakyReLU(alpha=0.01),
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation=keras.layers.LeakyReLU(alpha=0.01),
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation=keras.layers.LeakyReLU(alpha=0.01),
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.5790946, 0.5915348, 0.5997056, 0.6144277, 0.6204637, 0.6293706, 0.62730956, 0.6245123, 0.62539566, 0.62959146, 0.63584834, 0.6395289, 0.6398233, 0.643283, 0.64298856, 0.6421053, 0.64423996, 0.6404858, 0.6451969, 0.64593303]
+history_loss: [1.1680341508750929, 1.079372498655214, 0.8090008850961122, 0.7113654702210803, 0.6754973351187595, 0.682521397623456, 0.6822604869453618, 0.7010783004594016, 0.6808036238163502, 0.652089025950581, 0.6449794771788003, 0.642665155656995, 0.6508505885110517, 0.640163815170691, 0.6431295384104128, 0.6535514323554321, 0.6334099914293145, 0.6437676745080579, 0.6453888634394581, 0.6338857910718205]
+train_loss:  0.6338857910718205 , train_acc:  0.64593303
+validation_ones_loss: 0.5972461983012938, validation_ones_acc: 0.59429
+validation_zeros_loss: 0.6773849408347885, validation_zeros_acc: 0.6919192
+total_acc:  0.6440927625185082
+********************
+********************
+model18
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='tanh',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='tanh',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='tanh',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.61774015, 0.6278248, 0.6363636, 0.6395289, 0.6337873, 0.6392344, 0.63938165, 0.63849837, 0.6422525, 0.64777327, 0.64769965, 0.64541775, 0.6439455, 0.64902467, 0.6491719, 0.6487302, 0.65299964, 0.6498344, 0.65601766, 0.65712184]
+history_loss: [0.6571773920157485, 0.6461431044403753, 0.6424407296905545, 0.6410410555224231, 0.640964626335773, 0.6389982294413287, 0.635487680352695, 0.6364645332108976, 0.6339561189673252, 0.6316233823042299, 0.6304340348640346, 0.6282822630007916, 0.6294505027799778, 0.6271698295170655, 0.6240995451550209, 0.623113309007644, 0.6217224377545092, 0.6190214882363806, 0.616927834473246, 0.6168587053616257]
+train_loss:  0.6168587053616257 , train_acc:  0.65712184
+validation_ones_loss: 0.6228876042240639, validation_ones_acc: 0.60781366
+validation_zeros_loss: 0.680919606018204, validation_zeros_acc: 0.6544012
+total_acc:  0.6315789534012798
+********************
+********************
+model19
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='sigmoid',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='sigmoid',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='sigmoid',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam
+epochs = 20
+history_acc: [0.6169304, 0.6293706, 0.6309165, 0.63629, 0.6404858, 0.6367317, 0.6391608, 0.6423261, 0.64055943, 0.6408539, 0.643283, 0.6452705, 0.64836216, 0.64122194, 0.6452705, 0.64953995, 0.65115935, 0.6526316, 0.6485094, 0.65432465]
+history_loss: [0.6554888249013983, 0.6462964198455067, 0.6440787297643016, 0.6412271439743955, 0.6391596330804863, 0.6391127000980005, 0.6374691845566023, 0.6363195385264262, 0.6355723568609545, 0.6361790709167356, 0.6347254206075096, 0.6332738747524785, 0.6330587432803062, 0.6322651931675296, 0.6280867366875013, 0.628824701561926, 0.6274154703582873, 0.627004332813569, 0.6277677915444653, 0.623999964010641]
+train_loss:  0.623999964010641 , train_acc:  0.65432465
+validation_ones_loss: 0.7284748531390992, validation_ones_acc: 0.4665665
+validation_zeros_loss: 0.5435704330001214, validation_zeros_acc: 0.8073593
+total_acc:  0.6404122102115801
+********************
+********************
+model20
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = sgd
+epochs = 20
+history_acc: [0.5155686, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243, 0.5020243]
+history_loss: [7.295928805761579, 7.658414693487713, 7.658414699033555, 7.6584146974540435, 7.658414696155333, 7.658414687731269, 7.658414694891723, 7.658414703210488, 7.658414686186857, 7.658414707247019, 7.658414694891723, 7.658414694470521, 7.658414701981978, 7.658414703105187, 7.658414709142433, 7.658414701981978, 7.658414718479104, 7.6584146791317025, 7.658414715004178, 7.658414710616644]
+train_loss:  7.658414710616644 , train_acc:  0.5020243
+validation_ones_loss: 0.0, validation_ones_acc: 1.0
+validation_zeros_loss: 15.379093163285248, validation_zeros_acc: 0.0
+total_acc:  0.4898785425101215
+********************
+********************
+model21
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = sgd(0.002)
+epochs = 20
+history_acc: [0.55583364, 0.53073245, 0.608318, 0.6172985, 0.6214207, 0.62414426, 0.6286345, 0.62959146, 0.63003314, 0.63297755, 0.6296651, 0.6309901, 0.62826645, 0.62959146, 0.6304748, 0.6297387, 0.6304012, 0.6339345, 0.6309165, 0.6326831]
+history_loss: [1.891929798298212, 2.189247259840967, 1.038529397899893, 0.7351392064236699, 0.6579250948544061, 0.678436009678544, 0.6580039327224476, 0.6483363594735068, 0.6478062390359746, 0.6458530348146668, 0.6466642825797414, 0.6457027722949441, 0.6810422282733152, 0.653100523634522, 0.6481781882488601, 0.6498041602676302, 0.6499838941931768, 0.6488750814294657, 0.6457427616193095, 0.6494456702617761]
+train_loss:  0.6494456702617761 , train_acc:  0.6326831
+validation_ones_loss: 0.7620395659773445, validation_ones_acc: 0.4658152
+validation_zeros_loss: 0.5401252910688326, validation_zeros_acc: 0.7655123
+total_acc:  0.6186971085274268
+********************
+********************
+model22
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = nadam
+epochs = 20
+history_acc: [0.56989324, 0.6009569, 0.6090541, 0.6227457, 0.63533306, 0.62834007, 0.63599557, 0.6368789, 0.6375414, 0.63422894, 0.6430622, 0.6410011, 0.64549136, 0.6431358, 0.64762604, 0.6452705, 0.6465219, 0.6451969, 0.64549136, 0.6486566]
+history_loss: [1.4537863581155124, 1.0507084342061837, 0.89700694608039, 0.6954051912028341, 0.660628529423337, 0.6623869887028365, 0.6438760326063979, 0.6437306314081579, 0.6409879664923718, 0.6403492528724459, 0.6425962041966127, 0.6384575381321113, 0.6377411757754542, 0.6390856496981501, 0.6372774107823883, 0.6343112650846005, 0.6353723014721679, 0.6326662222339601, 0.6367722106717025, 0.631587035475209]
+train_loss:  0.631587035475209 , train_acc:  0.6486566
+validation_ones_loss: 0.6198320726449108, validation_ones_acc: 0.5927874
+validation_zeros_loss: 0.6547534989588188, validation_zeros_acc: 0.7041847
+total_acc:  0.6496135512826896
+********************
+********************
+model23
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = nadam(0.004)
+epochs = 20
+history_acc: [0.5977917, 0.61965406, 0.63187337, 0.6326095, 0.637615, 0.63783586, 0.63643724, 0.6379831, 0.63849837, 0.63724697, 0.63658446, 0.63724697, 0.63312477, 0.63702613, 0.63518584, 0.6369525, 0.64203167, 0.6373206, 0.6380567, 0.6427678]
+history_loss: [0.9479491797623759, 0.6606616652095234, 0.6685233516819477, 0.6520433736365202, 0.6498703456161915, 0.6501510511920607, 0.6448424860752809, 0.6453961482590334, 0.644141803605617, 0.6434813807192294, 0.6459610701046054, 0.6465209363267664, 0.6478975623067267, 0.6620308659468936, 0.6797968104520088, 0.6471468270154047, 0.645774211644863, 0.6757545274717649, 0.6448251969462421, 0.6432258761100221]
+train_loss:  0.6432258761100221 , train_acc:  0.6427678
+validation_ones_loss: 0.6793232030388469, validation_ones_acc: 0.55672425
+validation_zeros_loss: 0.6069793316709015, validation_zeros_acc: 0.7070707
+total_acc:  0.6334192045787086
+********************
+********************
+model24
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = adam(0.002)
+epochs = 20
+history_acc: [0.57607657, 0.59359586, 0.595657, 0.5984542, 0.6191388, 0.6315053, 0.6298859, 0.6351123, 0.6326831, 0.63165253, 0.6391608, 0.6404858, 0.64070666, 0.6440191, 0.64070666, 0.6452705, 0.645565, 0.6464483, 0.64755243, 0.64659554]
+history_loss: [2.4215950415596876, 1.1665023034444661, 1.0187979093315762, 1.085864023382189, 0.7583181854201715, 0.6685713347328643, 0.6524638036089783, 0.6458441720054481, 0.650276487365908, 0.6636805671166093, 0.646045245657434, 0.6421078317605006, 0.6418015451873538, 0.6377676932479162, 0.6443330874809852, 0.6398870501002275, 0.6378339221515241, 0.6355379045031551, 0.6375996049862378, 0.6334260339986151]
+train_loss:  0.6334260339986151 , train_acc:  0.64659554
+validation_ones_loss: 0.6653017746963329, validation_ones_acc: 0.5852742
+validation_zeros_loss: 0.6143363395122566, validation_zeros_acc: 0.70851374
+total_acc:  0.6481413416534301
+********************
+********************
+model25
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = nadam
+epochs = 30
+history_acc: [0.5679058, 0.59595144, 0.61420685, 0.6270887, 0.62767756, 0.6350387, 0.6290762, 0.6315053, 0.6416636, 0.63842475, 0.6440191, 0.6433566, 0.6409275, 0.64482886, 0.64254695, 0.6464483, 0.6456386, 0.64357746, 0.64762604, 0.6462275, 0.6514538, 0.6499816, 0.6521163, 0.6528524, 0.6508649, 0.65528154, 0.6562385, 0.6562385, 0.66006625, 0.6580788]
+history_loss: [1.284101270786927, 0.8598353532074039, 0.7047971494723472, 0.6523734667567063, 0.6528797198974081, 0.6432849314180331, 0.6460962815279464, 0.6514678034398061, 0.6400688364964704, 0.6390863556918038, 0.6377427624436394, 0.6369422452213749, 0.6352369025080881, 0.6355592855996492, 0.6311934644964454, 0.6330644042648986, 0.6313823860140025, 0.6297678165063728, 0.6372939619545906, 0.6271969829537564, 0.6261315150387287, 0.6254226893065912, 0.6231049708202124, 0.6228864426379437, 0.623109213113346, 0.6210300402076182, 0.6222329282435942, 0.616243452059683, 0.6150571421967914, 0.6140679728690868]
+train_loss:  0.6140679728690868 , train_acc:  0.6580788
+validation_ones_loss: 0.6136835156124754, validation_ones_acc: 0.56649137
+validation_zeros_loss: 0.675019282283205, validation_zeros_acc: 0.74025977
+total_acc:  0.6551343554909895
+********************
+********************
+model26
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = nadam
+epochs = 40
+history_acc: [0.5651822, 0.5990431, 0.6076555, 0.6102319, 0.62465954, 0.6334192, 0.6334192, 0.6345234, 0.63768864, 0.6354067, 0.63496506, 0.63930804, 0.6428414, 0.6410747, 0.64055943, 0.6467427, 0.64769965, 0.6474052, 0.64666915, 0.6474052, 0.64615387, 0.6497608, 0.65130657, 0.6457122, 0.6471844, 0.6557968, 0.65601766, 0.655576, 0.6597718, 0.65947735, 0.6616121, 0.65955096, 0.6638204, 0.666912, 0.66904676, 0.6633051, 0.66963565, 0.6680898, 0.66993004, 0.66904676]
+history_loss: [1.5050149015525618, 1.0282958748939943, 0.8500251910201232, 0.7629417406051616, 0.6716426227300712, 0.6482849715867813, 0.6499603838353724, 0.6538623960306857, 0.6404009932404632, 0.6400185374025479, 0.6436895413217977, 0.6393933102713378, 0.6375827330677747, 0.6396326163958486, 0.6399865739521929, 0.6357756096999962, 0.6325710351738282, 0.6327247608747822, 0.6323355878281339, 0.6336152200976145, 0.6312653865321051, 0.6271284499302655, 0.6288152607346353, 0.6990890674833257, 0.650527071452641, 0.6256594096600768, 0.6221204402870583, 0.6240129495921888, 0.6184864341576485, 0.6181794596499365, 0.615800896667583, 0.6144424687337472, 0.615366183820787, 0.6118329710367194, 0.6072559707121766, 0.6067848083066466, 0.605383959683505, 0.6269439472009647, 0.6027635510282829, 0.6000808570154195]
+train_loss:  0.6000808570154195 , train_acc:  0.66904676
+validation_ones_loss: 0.6500526796956424, validation_ones_acc: 0.57024795
+validation_zeros_loss: 0.6002424203644239, validation_zeros_acc: 0.7626263
+total_acc:  0.6683842684575904
+********************
+********************
+model27
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = nadam
+epochs = 50
+history_acc: [0.57747513, 0.60265, 0.62112623, 0.6217151, 0.62834007, 0.6373942, 0.62892896, 0.6361428, 0.63643724, 0.6298123, 0.6351123, 0.64423996, 0.64122194, 0.64254695, 0.64666915, 0.64262056, 0.6439455, 0.6456386, 0.64593303, 0.6444608, 0.6479205, 0.6515274, 0.64423996, 0.6519691, 0.65108573, 0.65358853, 0.65439826, 0.6580788, 0.65653294, 0.65874124, 0.65785795, 0.6591829, 0.662569, 0.6617593, 0.6627162, 0.6650718, 0.6668384, 0.6637468, 0.66764814, 0.66823703, 0.66889954, 0.6728745, 0.67670226, 0.6767759, 0.6745675, 0.67891055, 0.67655504, 0.68487304, 0.6820022, 0.67765915]
+history_loss: [1.20679806929807, 0.9945027605878285, 0.8085254246582211, 0.7288948464753393, 0.6513748195138889, 0.6444960636692447, 0.664502599983475, 0.6868097955267088, 0.6719089312328764, 0.7333758785130567, 0.6751426271011077, 0.6411574331635626, 0.6479816566638574, 0.6422479321248487, 0.636596974858827, 0.6349382681665853, 0.6353656164898696, 0.6380345749030185, 0.6757875909821093, 0.6424140003660298, 0.6370834690005541, 0.6305177835405509, 0.7091097943959185, 0.6371613854558142, 0.6276939402883177, 0.6260440192614841, 0.6229746352191528, 0.6217193286428567, 0.6208850920661039, 0.6198852595266806, 0.6176126656700769, 0.6176443888722513, 0.6143014949167481, 0.6133547438476556, 0.6111770154274164, 0.6085956491000696, 0.6084022740954461, 0.6106065951948618, 0.6074310192475654, 0.6033929902312946, 0.6024566901313675, 0.5973671860189441, 0.5924082485945908, 0.5938491064834384, 0.5962576054807178, 0.5895663082665453, 0.5893748745305775, 0.5849542081904491, 0.5856205530012185, 0.5907592540722715]
+train_loss:  0.5907592540722715 , train_acc:  0.67765915
+validation_ones_loss: 0.622756133708266, validation_ones_acc: 0.60330576
+validation_zeros_loss: 0.6414503293464022, validation_zeros_acc: 0.74531025
+total_acc:  0.675745294402968
+********************
+********************
+model28
+    return keras.Sequential([
+        keras.layers.Input(m),
+        keras.layers.Dense(200, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(100, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(50, activation='relu',
+                           kernel_initializer=keras.initializers.RandomNormal(
+                               mean=0.0, stddev=0.1, seed=None)),
+        keras.layers.Dense(2, activation='softmax')
+    ])
+
+optimizer = nadam
+epochs = 60
+history_acc: [0.57600296, 0.5997056, 0.619286, 0.6251012, 0.62259847, 0.6268679, 0.63629, 0.6382039, 0.6322414, 0.6401914, 0.6391608, 0.6396025, 0.64291495, 0.64365107, 0.64608026, 0.6452705, 0.64769965, 0.6490983, 0.6486566, 0.64961356, 0.65123296, 0.6515274, 0.64946634, 0.6528524, 0.6534413, 0.6561649, 0.6582996, 0.6573427, 0.6617593, 0.6616121, 0.66352594, 0.66308427, 0.66308427, 0.6627898, 0.66654396, 0.6691204, 0.66897315, 0.6716231, 0.6742731, 0.6728009, 0.6722856, 0.6704453, 0.6763342, 0.6749356, 0.6745675, 0.67655504, 0.6785425, 0.6803092, 0.6769231, 0.68082446, 0.6811925, 0.68435776, 0.6857563, 0.6820758, 0.68656605, 0.6873758, 0.68421054, 0.6863452, 0.68656605, 0.6833272]
+history_loss: [1.2100296774593222, 0.8061552083005262, 0.7058558122831801, 0.6847566341186737, 0.7341109153888311, 0.6728696384893256, 0.652450428502192, 0.6412282732290339, 0.6427868804029564, 0.6390706890419997, 0.6383617460135375, 0.6374223354813102, 0.6371857871059815, 0.6404469439989511, 0.6357091810758561, 0.6469275305540543, 0.6314046795946472, 0.6314194487261781, 0.6296401193442922, 0.632764733421219, 0.6284412612360455, 0.6255807726577138, 0.6313365306097837, 0.6239668132673523, 0.6256507512616637, 0.6248041268082984, 0.6185548594825444, 0.6168943210695875, 0.6208254174533292, 0.6176898811905095, 0.6093056331410933, 0.6087538522001483, 0.6195323252967495, 0.6088645550513206, 0.6031422435206265, 0.6023883632758895, 0.6012669356245743, 0.5984217470561839, 0.593443352653123, 0.5979025838872638, 0.598775712773341, 0.5995858915290018, 0.591323126380304, 0.5972710356714096, 0.5935055091796134, 0.5881841754843129, 0.5832367314720224, 0.5808877444350636, 0.5838465665033472, 0.5821753474294503, 0.5847284524546944, 0.5754869328336677, 0.5778733621373702, 0.578107089754146, 0.5711195160897725, 0.5726417693444197, 0.5761423411069216, 0.5776377900102185, 0.5705627906770008, 0.5874451767139063]
+train_loss:  0.5874451767139063 , train_acc:  0.6833272
+validation_ones_loss: 0.547479396964445, validation_ones_acc: 0.6619083
+validation_zeros_loss: 0.8078480193453261, validation_zeros_acc: 0.6601732
+total_acc:  0.6610231908709414
+********************
